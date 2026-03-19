@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WPS 아파트 단지 SPC 사업 기획서 v5.2</title>
+<title>WPS SPC 설립 기획서 v5.3</title>
 <style>
   :root {
     --primary: #1a2a3a;
@@ -427,6 +427,9 @@
     .cover-sigline { grid-template-columns: 1fr; }
     .body-wrap { padding: 32px 20px 60px; }
   }
+
+.highlight-red { color: #e53e3e; font-weight: 700; }
+.fill-box { background: #fff5f5; border: 1.5px dashed #e53e3e; border-radius: 6px; padding: 10px 14px; margin: 8px 0; color: #e53e3e; font-size: 13px; }
 </style>
 </head>
 <body>
@@ -438,13 +441,13 @@
     <div class="cover-meta-row">문서 번호 <span>BIZ-2026-WPS-003</span></div>
     <div class="cover-meta-row">문서 등급 <span>대외비 (CONFIDENTIAL)</span></div>
     <div class="cover-meta-row">작성 일자 <span>2026년 3월 19일</span></div>
-    <div class="cover-meta-row">버전 <span>v5.2</span></div>
+    <div class="cover-meta-row">버전 <span>v5.3</span></div>
     <div class="cover-meta-row">작성 부서 <span>전략기획팀</span></div>
   </div>
   <div class="cover-title-block">
     <div class="cover-label">Strategy Document · Special Purpose Company</div>
     <h1>WPS 아파트 단지 사업<br>합작법인(SPC) 설립 기획서</h1>
-    <h2>아파트너 × 법무법인 더 에이치 황해 컨소시엄<br>더테라스 실제 원가 기반 · 초기 투자 구조 재정립</h2>
+    <h2>아파트너 × 법무법인 더 에이치 황해 컨소시엄<br>운영시간 기반 인건비 · 자산 회수 시뮬레이션 포함</h2>
   </div>
   <div class="cover-sigline">
     <div class="cover-sigbox"><div class="sig-label">작 성</div><div class="sig-name">전략기획팀</div></div>
@@ -461,15 +464,15 @@
     <li><span class="toc-num">2.</span><span class="toc-text">SPC 핵심 인물 및 지배구조</span></li>
     <li><span class="toc-num">3.</span><span class="toc-text">WPS 공급망 및 합법적 계약 구조</span></li>
     <li><span class="toc-num">4.</span><span class="toc-text"><strong>메뉴 원가율 — 더테라스 실제 데이터 기반</strong></span></li>
-    <li><span class="toc-num">5.</span><span class="toc-text"><strong>손익 시뮬레이션 — 인건비 구조별 비교</strong></span></li>
+    <li><span class="toc-num">5.</span><span class="toc-text"><strong>손익 시뮬레이션 — 운영시간 기반 인건비 구조별</strong></span></li>
     <li><span class="toc-num">6.</span><span class="toc-text">개선안 — 아파트너 앱 주문 채널 추가</span></li>
     <li><span class="toc-num">7.</span><span class="toc-text">단지 손익 보전 방안</span></li>
-    <li><span class="toc-num">8.</span><span class="toc-text">SPC 1년차 손익 및 로드맵</span></li>
+    <li><span class="toc-num">8.</span><span class="toc-text"><strong>SPC 손익 및 자산 회수 시뮬레이션</strong></span></li>
     <li><span class="toc-num">9.</span><span class="toc-text">SPC 고정비 구조</span></li>
     <li><span class="toc-num">10.</span><span class="toc-text">누적 단지 성장 전망</span></li>
     <li><span class="toc-num">11.</span><span class="toc-text">단지 카페 수익의 적법성 검토</span></li>
-    <li><span class="toc-num">12.</span><span class="toc-text">지분 구조 및 주주간계약</span></li>
-    <li><span class="toc-num">13.</span><span class="toc-text"><strong>초기 투자 구조 — 머신 구매 및 인테리어</strong></span></li>
+    <li><span class="toc-num">12.</span><span class="toc-text">지분 구조 및 주주간계약 (SHA)</span></li>
+    <li><span class="toc-num">13.</span><span class="toc-text"><strong>초기 투자 구조 — 머신(SPC 자산) 및 인테리어</strong></span></li>
   </ol>
 </div>
 
@@ -478,17 +481,16 @@
 <!-- 1 -->
 <section>
   <div class="sec-head"><div class="sec-num-block">01</div><h2>SPC 설립 목적 및 배경</h2></div>
-  <p>국내 3,000세대 이상 아파트 단지는 유휴 공간이 있음에도 전문 F&amp;B 브랜드를 입점시킬 채널이 없습니다. 공동주택관리법은 커뮤니티 시설 운영을 입대의 주도로 규정하고 있어 외부 사업자 직접 운영에 법적 제약이 있습니다. 본 SPC는 이 두 문제를 동시에 해결하는 구조로 설계되었습니다.</p>
+  <p>국내 3,000세대 이상 아파트 단지는 유휴 공간이 있음에도 전문 F&amp;B 브랜드를 입점시킬 채널이 없습니다. 공동주택관리법은 커뮤니티 시설 운영을 입대의 주도로 규정하고 있어 외부 사업자 직접 운영에 법적 제약이 있습니다.</p>
   <h3>설립 핵심 목적 3가지</h3>
   <table>
     <thead><tr><th style="width:18%">목적</th><th>상세 내용</th></tr></thead>
     <tbody>
-      <tr><td><strong>① 단지 수익화</strong></td><td>현재 무수익 상태인 단지 내 유휴 공간(클럽하우스·커뮤니티 센터)을 WPS 카페로 전환하여 단지의 자체 수익원을 만든다. 운영 구조 최적화 시 단지 흑자 달성이 가능하다.</td></tr>
-      <tr><td><strong>② 앱 가치 증대</strong></td><td>아파트너 앱과 카페를 연결함으로써 DAU(일일 활성 유저)를 획기적으로 늘린다. 커피 앱 주문·쿠폰 발급·관리비 정산이 아파트너 앱 내에서 이루어지면 단순 관리 앱에서 생활 플랫폼으로 진화할 수 있다.</td></tr>
-      <tr><td><strong>③ 황해 접점 강화</strong></td><td>WPS 카페를 입점시킨 단지는 황해의 지속적인 법률 서비스 채널이 된다. 하자 소송, 입대의 자문, 집단 등기 등 향후 수임으로 이어지는 핵심 접점이다.</td></tr>
+      <tr><td><strong>① 단지 수익화</strong></td><td>현재 무수익 상태인 단지 내 유휴 공간을 WPS 카페로 전환. 운영 인력 구조 최적화 시 단지 흑자 달성 가능.</td></tr>
+      <tr><td><strong>② 앱 가치 증대</strong></td><td>아파트너 앱과 카페를 연결, DAU 획기적 증대. 커피 앱 주문·쿠폰·관리비 정산이 아파트너 앱 내에서 이루어지면 생활 플랫폼으로 진화.</td></tr>
+      <tr><td><strong>③ 황해 접점 강화</strong></td><td>WPS 카페 입점 단지는 황해의 법률 서비스 채널이 된다. 하자 소송, 입대의 자문, 집단 등기 등 향후 수임으로 이어지는 핵심 접점.</td></tr>
     </tbody>
   </table>
-  <h3>시장 기회</h3>
   <table>
     <thead><tr><th>구분</th><th>규모</th><th>비고</th></tr></thead>
     <tbody>
@@ -505,23 +507,23 @@
   <h3>대표이사: 성현우</h3>
   <div class="reason-grid">
     <div class="reason-card">
-      <div class="r-num">현직 ①</div>
-      <h4>법무법인 더 에이치 황해 국장</h4>
+      <div class="r-num">현직 ① 법무법인 더 에이치 황해 국장</div>
+      <h4></h4>
       <p>황해 200개+ 수임 단지와의 직접 신뢰 관계 보유. 공동주택관리법·사업자 선정지침 실무 전문성. 입찰 제안서 작성부터 계약 체결까지 법률 원스톱 지원.</p>
     </div>
     <div class="reason-card">
-      <div class="r-num">현직 ②</div>
-      <h4>아파트너 AI 이사</h4>
+      <div class="r-num">현직 ② 아파트너 AI 이사</div>
+      <h4></h4>
       <p>아파트너 앱 전략·AI 기능 기획 총괄. WPS 카페 ↔ 아파트너 앱 연동 설계 및 실행 주도. 앱 주문·쿠폰·관리비 정산 연계 시스템 구축 가능.</p>
     </div>
   </div>
-  <div class="note">황해(법률 채널)와 아파트너(앱 플랫폼) 두 조직에 모두 발을 걸치고 있어, SPC가 추구하는 "법률 지원 + 앱 연동"의 복합 모델을 단일 인물이 실행할 수 있는 구조입니다. <strong>SPC 인건비 0원</strong>으로 양측 채널을 동시에 활용합니다.</div>
+  <div class="note">황해(법률 채널)와 아파트너(앱 플랫폼) 두 조직에 모두 발을 걸치고 있어, "법률 지원 + 앱 연동"의 복합 모델을 단일 인물이 실행할 수 있는 구조입니다. <strong>SPC 인건비 0원</strong>으로 양측 채널을 동시에 활용합니다.</div>
   <h3>지분 구조</h3>
   <table>
     <thead><tr><th>주주</th><th>지분</th><th>출자금</th><th>주요 역할</th></tr></thead>
     <tbody>
       <tr><td><strong>아파트너</strong></td><td>70%</td><td>7,000만원</td><td>앱 플랫폼 제공, 전국 영업망, 자본 주도</td></tr>
-      <tr><td><strong>법무법인 더 에이치 황해</strong></td><td>30%</td><td>3,000만원</td><td>200개+ 단지 관계망, 입찰·법률 원스톱 지원</td></tr>
+      <tr><td><strong>법무법인 더 에이치 황해</strong></td><td>30%</td><td>3,000만원</td><td>200개+ 단지 관계망, 입찰·법률 원스톱 지원, 대표이사 파견</td></tr>
     </tbody>
   </table>
 </section>
@@ -529,40 +531,23 @@
 <!-- 3 -->
 <section>
   <div class="sec-head"><div class="sec-num-block">03</div><h2>WPS 공급망 및 합법적 계약 구조</h2></div>
-  <h3>공급망 5단계</h3>
   <table>
     <thead><tr><th style="width:8%">단계</th><th style="width:26%">주체</th><th>역할</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>스타벅스 본사 → 네슬레</td><td>B2B 커피 채널 독점 유통권. 네슬레가 전 세계 식품 서비스 채널에 스타벅스 브랜드 커피 공급.</td></tr>
+      <tr><td>1</td><td>스타벅스 본사 → 네슬레</td><td>B2B 커피 채널 독점 유통권. 전 세계 식품 서비스 채널에 스타벅스 브랜드 커피 공급.</td></tr>
       <tr><td>2</td><td>네슬레 코리아</td><td>한국 WPS 프로그램 총괄. 브랜드 가이드라인 관리.</td></tr>
-      <tr><td>3</td><td>오진양행 (공식 파트너사)</td><td>WPS 전용 에스프레소 머신·그라인더 기기 판매 + 스타벅스 원두 정기 공급.</td></tr>
-      <tr><td>4</td><td>WPS SPC</td><td>오진양행에서 머신 직접 구매(자산화). 아파트 단지 맞춤 솔루션 패키지 제공(입찰 지원·운영 교육·앱 연동·정산 관리).</td></tr>
-      <tr><td>5</td><td>아파트 단지 (입대의)</td><td>카페 운영 주체. 운영 인력 고용·현장 관리. SPC에 위탁 수수료 지급.</td></tr>
+      <tr><td>3</td><td>오진양행 (공식 파트너사)</td><td>WPS 전용 에스프레소 머신·그라인더 판매 + 스타벅스 원두 정기 공급.</td></tr>
+      <tr><td>4</td><td>WPS SPC</td><td>오진양행에서 머신 직접 구매 (SPC 유형자산 계상). 아파트 단지 맞춤 솔루션 패키지 제공.</td></tr>
+      <tr><td>5</td><td>아파트 단지 (입대의)</td><td>카페 운영 주체. 운영 인력 고용. SPC에 위탁 수수료 지급.</td></tr>
     </tbody>
   </table>
-  <div class="note">WPS 전용 에스프레소 머신은 에스프레소 추출·우유 스팀·음료 완성이 완전 표준화되어 있어, <strong>일반 운영 인력도 1~2일 교육 후 즉시 운용이 가능</strong>합니다. 단지는 기존 관리 인력을 활용하거나 파트타임 인원을 최소 고용할 수 있습니다.</div>
-  <h3>사업자 선정 및 법률 준수 구조</h3>
-  <table>
-    <thead><tr><th>요건</th><th>내용</th><th>SPC 대응</th></tr></thead>
-    <tbody>
-      <tr><td>위탁 사업자 선정</td><td>500만원 이상 용역: 경쟁 입찰 의무</td><td>황해가 입찰 제안서 작성·법률 지원 → 낙찰 성공률 극대화</td></tr>
-      <tr><td>입대의 의결</td><td>운영 계약 전 입대의 과반 의결 필요</td><td>의결 자료·주민 공청회 기획 지원</td></tr>
-      <tr><td>매출 처리</td><td>카페 매출 = 단지 잡수입으로 회계 처리</td><td>월별 매출·정산 보고서 자동 제공</td></tr>
-      <tr><td>수수료 합법성</td><td>위탁 운영 용역비로 계약서에 명기</td><td>황해 검토 표준 계약서 제공</td></tr>
-    </tbody>
-  </table>
+  <div class="note">WPS 머신은 에스프레소 추출·우유 스팀·음료 완성이 완전 표준화되어 있어 <strong>일반 운영 인력도 1~2일 교육 후 즉시 운용 가능</strong>합니다.</div>
 </section>
 
 <!-- 4 -->
 <section>
   <div class="sec-head"><div class="sec-num-block">04</div><h2>메뉴 원가율 — 더테라스 실제 데이터 기반</h2></div>
-  <p>본 섹션의 원가 수치는 <strong>더테라스 성현우 이사님 원가 시트(오진양행 납품가 기준)</strong>를 직접 분석하여 산출한 실제값입니다.</p>
-
-  <div class="note update">
-    <div class="note-label">원가 분석 기준</div>
-    원가총액 = 해당 메뉴 1잔을 만드는 데 드는 전체 재료비(원두 + 우유 + 시럽 + 컵 + 뚜껑 + 슬리브 등 모든 소모품 포함). 판매가는 더테라스 실제 판매가 기준이며, WPS 매장 적용 시 단지별 협의로 결정됩니다.
-  </div>
-
+  <div class="note update"><div class="note-label">원가 기준</div>더테라스 성현우 이사님 원가 시트(오진양행 납품가) 기반 실측값. 원가총액 = 원두+우유+시럽+컵+뚜껑+슬리브 등 전체 소모품 포함.</div>
   <h3>메뉴별 실제 원가 (원가총액 기준)</h3>
   <table>
     <thead><tr><th>메뉴</th><th>사이즈</th><th>원가총액</th><th>판매가</th><th>원가율</th><th>잔당 마진</th></tr></thead>
@@ -573,18 +558,14 @@
       <tr><td>Grande</td><td>2,006원</td><td>4,500원</td><td>44.6%</td><td>2,494원</td></tr>
       <tr><td rowspan="2"><strong>바닐라·헤이즐넛 라떼</strong></td><td>Tall</td><td>2,244원</td><td>4,300원</td><td>52.2%</td><td>2,056원</td></tr>
       <tr><td>Grande</td><td>2,839원</td><td>5,300원</td><td>53.6%</td><td>2,461원</td></tr>
-      <tr><td rowspan="2"><strong>카라멜 마키아또</strong></td><td>Tall</td><td>2,166원</td><td>4,300원</td><td>50.4%</td><td>2,134원</td></tr>
-      <tr><td>Grande</td><td>2,863원</td><td>5,300원</td><td>54.0%</td><td>2,437원</td></tr>
       <tr><td colspan="2" style="background:#f8f9fa"><strong>메뉴 믹스 가중 평균 (28개 SKU)</strong></td><td style="background:#f8f9fa"><strong>2,166원</strong></td><td style="background:#f8f9fa"><strong>4,250원</strong></td><td style="background:#f8f9fa"><strong>51.0%</strong></td><td style="background:#f8f9fa"><strong>2,084원</strong></td></tr>
     </tbody>
   </table>
-
-  <h3>쿠폰 단가 및 수수료 협의 범위</h3>
   <table>
     <thead><tr><th>항목</th><th>현행</th><th>개선안</th><th>효과</th></tr></thead>
     <tbody>
       <tr><td>쿠폰 단가</td><td>1,500원/장</td><td><strong>2,000원/장</strong></td><td>3,000세대 쿠폰 수입 1,350만원 → 1,800만원</td></tr>
-      <tr><td>SPC 수수료 (쿠폰+현금)</td><td>—</td><td><strong>15~30%</strong></td><td>단지 규모·매출에 따라 협의 (기본 20%)</td></tr>
+      <tr><td>SPC 수수료 (쿠폰+현금)</td><td>—</td><td><strong>15~30%</strong></td><td>기본 20%, 단지 규모·매출에 따라 협의</td></tr>
       <tr><td>앱 주문 수수료</td><td>—</td><td><strong>50%</strong></td><td>신규 창출 수요, 단지도 50% 수취</td></tr>
     </tbody>
   </table>
@@ -592,125 +573,107 @@
 
 <!-- 5 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">05</div><h2>손익 시뮬레이션 — 인건비 구조별 비교</h2></div>
-  <p>세대당 월 3.5잔(Normal) 기준. 재료비 잔당 2,166원(더테라스 원가 시트 실측). 인건비가 손익의 핵심 변수입니다.</p>
+  <div class="sec-head"><div class="sec-num-block">05</div><h2>손익 시뮬레이션 — 운영시간 기반 인건비 구조별</h2></div>
+  <p>운영시간: <strong>오전 7시 ~ 오후 8시 (13시간)</strong>. 세대당 3.5잔/월 Normal 기준. 재료비 잔당 2,166원(실측).</p>
 
-  <div class="note caution">
-    <div class="note-label">핵심 인사이트</div>
-    실제 원가(잔당 2,166원) 기준, <strong>인건비가 손익을 결정</strong>합니다. 정규직 4명(1,000만원/월) 구조에서는 3,000세대 Normal 기준 단지 적자(-478만원)가 발생합니다. 파트타임 2명(400만원/월) 구조 또는 기존 관리 인력 활용 시 3,000세대 Normal에서 +122만원 흑자 전환이 가능합니다.
-  </div>
+  <h3>운영 인력 구조별 월 인건비</h3>
+  <table>
+    <thead><tr><th>인력 구성</th><th>구성 내역</th><th>월 인건비</th><th>특징</th></tr></thead>
+    <tbody>
+      <tr><td>풀타임 1명 단독</td><td>정규직 1명 × 250만원</td><td>250만원</td><td>1인 운영 한계 (쉬는 날 공백)</td></tr>
+      <tr><td><strong>풀타임 1 + 파트 1</strong></td><td>정규 250만 + 파트 158만</td><td><strong>408만원</strong></td><td>안정적 2인 교대, 2,000세대 권장</td></tr>
+      <tr><td>파트타임 2명 교대</td><td>파트 158만 × 2명</td><td>316만원</td><td>최저 인건비, 관리 인력 활용 시 적용</td></tr>
+      <tr><td>풀타임 1 + 파트 2</td><td>정규 250만 + 파트 316만</td><td>566만원</td><td>3,000세대 이상 피크타임 대응</td></tr>
+      <tr><td>풀타임 2명</td><td>정규 250만 × 2명</td><td>500만원</td><td>고품질 서비스, 고비용 구조</td></tr>
+    </tbody>
+  </table>
+  <div class="note caution"><div class="note-label">파트타임 기준</div>파트타임: 하루 6시간 × 22일 = 132시간/월 × 12,000원(최저임금) = 158만원/월. 풀타임: 월 209시간 기준 최저임금 + 법정수당 포함 약 250만원.</div>
 
-  <h3>3,000세대 기본안 — 인건비 구조별 비교 (수수료 20%)</h3>
+  <h3>2,000세대 — 인건비 구조별 손익 비교</h3>
   <table>
     <thead>
-      <tr>
-        <th>항목</th>
-        <th>정규직 4명<br>(월 250만×4)</th>
-        <th>정규직 3명<br>(월 230만×3)</th>
-        <th>파트타임 2명<br>(월 200만×2)</th>
-      </tr>
+      <tr><th>항목</th><th>풀타임1+파트2<br>(566만원)</th><th>풀타임1+파트1<br>(408만원)</th><th>파트타임2명<br>(316만원)</th></tr>
     </thead>
     <tbody>
-      <tr style="background:#f8f9fa"><td colspan="4"><strong>[ 수입 ] 세대당 3.5잔/월 = 10,500잔/월 (350잔/일)</strong></td></tr>
+      <tr style="background:#f8f9fa"><td colspan="4"><strong>판매량 — 세대당 3.0잔/월 = 6,000잔/월 (200잔/일)</strong></td></tr>
+      <tr><td>쿠폰 선납 수입</td><td>1,200만원</td><td>1,200만원</td><td>1,200만원</td></tr>
+      <tr><td>현금 판매 수입</td><td>765만원</td><td>765만원</td><td>765만원</td></tr>
+      <tr style="background:#f8f9fa"><td><strong>총 매출</strong></td><td><strong>1,965만원</strong></td><td><strong>1,965만원</strong></td><td><strong>1,965만원</strong></td></tr>
+      <tr><td>재료비 (2,166원/잔)</td><td>1,300만원</td><td>1,300만원</td><td>1,300만원</td></tr>
+      <tr><td><strong>운영 인건비</strong></td><td><strong>566만원</strong></td><td><strong>408만원</strong></td><td><strong>316만원</strong></td></tr>
+      <tr><td>운영비 (2%)</td><td>39만원</td><td>39만원</td><td>39만원</td></tr>
+      <tr><td>SPC 수수료 (20%)</td><td>393만원</td><td>393만원</td><td>393만원</td></tr>
+      <tr style="background:#f8f9fa"><td><strong>총 비용</strong></td><td><strong>2,298만원</strong></td><td><strong>2,140만원</strong></td><td><strong>2,048만원</strong></td></tr>
+      <tr><td><strong>단지 월 순수익</strong></td><td><strong style="color:#9b2335">−333만원</strong></td><td><strong style="color:#9b2335">−175만원</strong></td><td><strong style="color:#9b2335">−83만원</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="note caution"><div class="note-label">2,000세대 핵심 이슈</div>2,000세대 기준 일 판매량이 200잔으로, 재료비만으로도 매출의 66%를 소진합니다. 단지 측이 <strong>기존 관리 인력(경비원 등)을 카페 겸직</strong>으로 활용하면 추가 인건비 없이 운영 가능하며, 이 경우 단지 순수익 +310만원 흑자 전환이 가능합니다.</div>
+
+  <h3>3,000세대 — 인건비 구조별 손익 비교</h3>
+  <table>
+    <thead>
+      <tr><th>항목</th><th>풀타임1+파트3<br>(725만원)</th><th>풀타임1+파트2<br>(566만원)</th><th>파트타임2명<br>(316만원)</th></tr>
+    </thead>
+    <tbody>
+      <tr style="background:#f8f9fa"><td colspan="4"><strong>판매량 — 세대당 3.5잔/월 = 10,500잔/월 (350잔/일)</strong></td></tr>
       <tr><td>쿠폰 선납 수입</td><td>1,800만원</td><td>1,800만원</td><td>1,800만원</td></tr>
-      <tr><td>현금·카드 판매</td><td>1,785만원</td><td>1,785만원</td><td>1,785만원</td></tr>
+      <tr><td>현금 판매 수입</td><td>1,785만원</td><td>1,785만원</td><td>1,785만원</td></tr>
       <tr style="background:#f8f9fa"><td><strong>총 매출</strong></td><td><strong>3,585만원</strong></td><td><strong>3,585만원</strong></td><td><strong>3,585만원</strong></td></tr>
-      <tr style="background:#f8f9fa"><td colspan="4"><strong>[ 비용 ]</strong></td></tr>
-      <tr><td>재료비 (잔당 2,166원)</td><td>2,274만원</td><td>2,274만원</td><td>2,274만원</td></tr>
-      <tr><td><strong>운영 인력비</strong></td><td><strong>1,000만원</strong></td><td><strong>690만원</strong></td><td><strong>400만원</strong></td></tr>
+      <tr><td>재료비 (2,166원/잔)</td><td>2,274만원</td><td>2,274만원</td><td>2,274만원</td></tr>
+      <tr><td><strong>운영 인건비</strong></td><td><strong>725만원</strong></td><td><strong>566만원</strong></td><td><strong>316만원</strong></td></tr>
       <tr><td>운영비 (2%)</td><td>72만원</td><td>72만원</td><td>72만원</td></tr>
-      <tr><td>SPC 위탁 수수료 (20%)</td><td>717만원</td><td>717만원</td><td>717만원</td></tr>
-      <tr style="background:#f8f9fa"><td><strong>총 비용</strong></td><td><strong>4,063만원</strong></td><td><strong>3,753만원</strong></td><td><strong>3,463만원</strong></td></tr>
-      <tr><td><strong>단지 월 순수익</strong></td><td><strong style="color:#9b2335">−478만원</strong></td><td><strong style="color:#9b2335">−168만원</strong></td><td><strong style="color:#276749">+122만원 ✓</strong></td></tr>
+      <tr><td>SPC 수수료 (20%)</td><td>717만원</td><td>717만원</td><td>717만원</td></tr>
+      <tr style="background:#f8f9fa"><td><strong>총 비용</strong></td><td><strong>3,788만원</strong></td><td><strong>3,629만원</strong></td><td><strong>3,379만원</strong></td></tr>
+      <tr><td><strong>단지 월 순수익</strong></td><td><strong style="color:#9b2335">−203만원</strong></td><td><strong style="color:#9b2335">−44만원</strong></td><td><strong style="color:#276749">+206만원 ✓</strong></td></tr>
     </tbody>
   </table>
-
-  <h3>시나리오별 단지 손익 요약 (정규직 4명 기준, 단위: 만원)</h3>
-  <table class="tbl-scenario">
-    <thead>
-      <tr>
-        <th rowspan="2">단지 규모</th>
-        <th colspan="2">Worst (2.5잔)</th>
-        <th colspan="2">Normal (3.5잔)</th>
-        <th colspan="2">Best (5.0잔)</th>
-      </tr>
-      <tr><th>일 판매</th><th>단지 순수익</th><th>일 판매</th><th>단지 순수익</th><th>일 판매</th><th>단지 순수익</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><strong>2,000세대</strong></td><td>167잔</td><td>−632만원</td><td>233잔</td><td>−402만원</td><td>333잔</td><td>−57만원</td></tr>
-      <tr><td><strong>3,000세대</strong></td><td>250잔</td><td>−823만원</td><td>350잔</td><td>−478만원</td><td>500잔</td><td><strong>+39만원</strong></td></tr>
-    </tbody>
-  </table>
-
-  <h3>시나리오별 단지 손익 요약 (파트타임 2명 기준, 단위: 만원)</h3>
-  <table class="tbl-scenario">
-    <thead>
-      <tr>
-        <th rowspan="2">단지 규모</th>
-        <th colspan="2">Worst (2.5잔)</th>
-        <th colspan="2">Normal (3.5잔)</th>
-        <th colspan="2">Best (5.0잔)</th>
-      </tr>
-      <tr><th>일 판매</th><th>단지 순수익</th><th>일 판매</th><th>단지 순수익</th><th>일 판매</th><th>단지 순수익</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><strong>2,000세대</strong></td><td>167잔</td><td>−282만원</td><td>233잔</td><td>−52만원</td><td>333잔</td><td><strong>+293만원</strong></td></tr>
-      <tr><td><strong>3,000세대</strong></td><td>250잔</td><td>−223만원</td><td>350잔</td><td><strong>+122만원</strong></td><td>500잔</td><td><strong>+639만원</strong></td></tr>
-    </tbody>
-  </table>
-
-  <div class="note update">
-    <div class="note-label">운영 인력 전략</div>
-    WPS 머신은 바리스타 자격 불필요. 단지 기존 관리 인력(경비·미화 등) 활용 또는 파트타임 2명 채용 시 고정 인건비를 400만원 수준으로 낮출 수 있습니다. 3,000세대 이상 단지에서 파트타임 구조 적용 시 Normal 시나리오 기준 월 +122만원 흑자 달성이 가능합니다.
-  </div>
 </section>
 
 <!-- 6 -->
 <section>
   <div class="sec-head"><div class="sec-num-block">06</div><h2>개선안 — 아파트너 앱 주문 채널 추가</h2></div>
-  <h3>앱 주문 채널 운영 방식</h3>
   <table>
     <thead><tr><th style="width:12%">단계</th><th>내용</th></tr></thead>
     <tbody>
       <tr><td>1. 주문</td><td>입주민이 아파트너 앱에서 메뉴 선택 → 픽업 시간 지정</td></tr>
       <tr><td>2. 준비</td><td>카페 운영 인력이 앱 주문 수신 → 음료 준비</td></tr>
       <tr><td>3. 정산</td><td>월말 관리비 명세서에 "카페 앱 이용료"로 합산 청구</td></tr>
-      <tr><td>4. 수수료</td><td>앱 주문 매출의 50%를 단지 → SPC에 지급 (나머지 50%는 단지 수입)</td></tr>
+      <tr><td>4. 수수료</td><td>앱 주문 매출의 50%를 단지 → SPC에 지급 (나머지 50% 단지 수입)</td></tr>
     </tbody>
   </table>
-  <h3>3,000세대 개선안 (파트타임 2명 + 앱 주문 추가)</h3>
+  <h3>3,000세대 개선안 (파트타임2명 + 앱 10% 추가)</h3>
   <table>
     <thead><tr><th>항목</th><th>계산 근거</th><th>금액</th></tr></thead>
     <tbody>
-      <tr style="background:#f8f9fa"><td colspan="3"><strong>[ 수입 ] 기본안 10,500잔 + 앱 추가 1,050잔 (10%)</strong></td></tr>
+      <tr style="background:#f8f9fa"><td colspan="3"><strong>[ 수입 ] 기본 10,500잔 + 앱 1,050잔 (10%)</strong></td></tr>
       <tr><td>쿠폰 선납 수입</td><td>3,000 × 3 × 2,000원</td><td>1,800만원</td></tr>
       <tr><td>현금 현장 판매</td><td>4,200잔 × 4,250원</td><td>1,785만원</td></tr>
       <tr><td>앱 주문 (신규)</td><td>1,050잔 × 4,250원</td><td>446만원</td></tr>
       <tr style="background:#f8f9fa"><td colspan="2"><strong>총 매출</strong></td><td><strong>4,031만원</strong></td></tr>
-      <tr><td>재료비 (2,166원/잔)</td><td>11,550잔 × 2,166원</td><td>2,502만원</td></tr>
-      <tr><td>운영 인력비 (파트타임 2명)</td><td>2명 × 200만원</td><td>400만원</td></tr>
+      <tr><td>재료비</td><td>11,550잔 × 2,166원</td><td>2,502만원</td></tr>
+      <tr><td>운영 인건비 (파트타임 2명)</td><td>2명 × 158만원</td><td>316만원</td></tr>
       <tr><td>운영비 (2%)</td><td>4,031만원 × 2%</td><td>81만원</td></tr>
       <tr><td>SPC 수수료 (쿠폰+현금 20%)</td><td>3,585만원 × 20%</td><td>717만원</td></tr>
       <tr><td>SPC 앱 수수료 (50%)</td><td>446만원 × 50%</td><td>223만원</td></tr>
-      <tr style="background:#f8f9fa"><td colspan="2"><strong>총 비용</strong></td><td><strong>3,923만원</strong></td></tr>
-      <tr style="background:#f0fff4"><td colspan="2"><strong>단지 월 순수익</strong></td><td><strong>+108만원 ✓ 흑자</strong></td></tr>
+      <tr style="background:#f8f9fa"><td colspan="2"><strong>총 비용</strong></td><td><strong>3,839만원</strong></td></tr>
+      <tr style="background:#f0fff4"><td colspan="2"><strong>단지 월 순수익</strong></td><td><strong>+192만원 ✓ 흑자</strong></td></tr>
     </tbody>
   </table>
 </section>
 
 <!-- 7 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">07</div><h2>단지 손익 보전 방안 — SPC의 위험 공유 프로그램</h2></div>
+  <div class="sec-head"><div class="sec-num-block">07</div><h2>단지 손익 보전 방안</h2></div>
   <div class="reason-grid">
     <div class="reason-card">
       <div class="r-num">Option A</div>
       <h4>수수료 변동제</h4>
-      <p>월 매출 구간에 따라 SPC 수수료율 차등 적용.<br>1,500만원 이하: 10% / 1,500~2,500만원: 15% / 2,500만원 초과: 20%<br>효과: 매출이 낮을 때 단지 부담 자동 감소.</p>
+      <p>월 매출 1,500만원 이하: 10% / 1,500~2,500만원: 15% / 2,500만원 초과: 20%<br>효과: 매출 낮을 때 단지 부담 자동 감소.</p>
     </div>
     <div class="reason-card">
       <div class="r-num">Option B ★ 파일럿 권장</div>
       <h4>초기 3개월 수수료 면제</h4>
-      <p>계약 후 첫 3개월 SPC 수수료 0원. 4개월차부터 정상 적용.<br>효과: 단지 초기 정착 기간 수수료 부담 없음. 손익 개선 효과 극대화.</p>
+      <p>계약 후 첫 3개월 SPC 수수료 0원. 4개월차부터 정상 적용.<br>효과: 단지 초기 정착 기간 수수료 부담 없음.</p>
     </div>
     <div class="reason-card">
       <div class="r-num">Option C</div>
@@ -720,47 +683,101 @@
     <div class="reason-card">
       <div class="r-num">Option D ★ 파일럿 권장</div>
       <h4>인테리어 SPC 부분 지원</h4>
-      <p>파일럿 단지에 한해 SPC가 인테리어 비용 500~1,000만원 서비스 지원.<br>계약 기간(2년) 내 수수료로 분할 환수.</p>
+      <p>파일럿 단지 한정, SPC가 500~1,000만원 지원. 계약 기간(2년) 내 수수료로 분할 환수.</p>
     </div>
-  </div>
-  <div class="note caution">
-    <div class="note-label">권장 조합</div>
-    초기 파일럿(3개 단지)에는 <strong>Option B + Option D</strong> 조합 권장. 3개월 수수료 면제 + 인테리어 일부 지원으로 단지 결정 장벽 최소화. 이후 10개 단지 이상부터는 Option A(수수료 변동제)를 기본으로 적용합니다.
   </div>
 </section>
 
 <!-- 8 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">08</div><h2>SPC 1년차 손익 및 로드맵</h2></div>
-  <h3>1년차 SPC 연간 손익 (20개 단지, 기본안 기준)</h3>
+  <div class="sec-head"><div class="sec-num-block">08</div><h2>SPC 손익 및 자산 회수 시뮬레이션</h2></div>
+
+  <h3>에스프레소 머신 자산 처리 방식</h3>
   <table>
-    <thead><tr><th>항목</th><th>계산</th><th>금액</th></tr></thead>
+    <thead><tr><th>항목</th><th>내용</th></tr></thead>
     <tbody>
-      <tr><td>2,000세대 단지당 SPC 월 수수료</td><td>2,390만원 × 20%</td><td>478만원</td></tr>
-      <tr><td>3,000세대 단지당 SPC 월 수수료</td><td>3,585만원 × 20%</td><td>717만원</td></tr>
-      <tr><td>평균 (2K·3K 혼합)</td><td>(478 + 717) ÷ 2</td><td>598만원/단지</td></tr>
-      <tr><td>20개 단지 월 수수료 합계</td><td>598만원 × 20개</td><td>11,960만원</td></tr>
-      <tr><td>SPC 본사 고정비</td><td>영업경비 150 + 사무실 100 + 외주 150</td><td>−400만원</td></tr>
-      <tr style="background:#f8f9fa"><td colspan="2"><strong>SPC 월 순수익</strong></td><td><strong>11,560만원</strong></td></tr>
-      <tr style="background:#1a2a3a; color:#fff"><td colspan="2"><strong>SPC 연간 순수익 (세전)</strong></td><td><strong>약 13.9억원</strong></td></tr>
+      <tr><td>구매가 (1대)</td><td>3,000만원 (서모플랜 Standard + 설치비 포함)</td></tr>
+      <tr><td>자산 분류</td><td>SPC 유형자산 계상 (오진양행 직접 구매)</td></tr>
+      <tr><td>내용연수</td><td>5년 (60개월)</td></tr>
+      <tr><td>잔존가치</td><td>20% = 600만원 (중고 매각 기준)</td></tr>
+      <tr><td><strong>월 감가상각비</strong></td><td><strong>(3,000 - 600) ÷ 60 = 40만원/월 (1대 기준)</strong></td></tr>
+      <tr><td>계약 해지 시</td><td>머신 회수 후 타 단지 재배치 또는 중고 매각. 5년 후 잔존가치 600만원 보전.</td></tr>
     </tbody>
   </table>
-  <div class="note update">앱 채널 추가 시: 20개 단지 연간 순수익 약 17~19억원까지 확대 가능.</div>
-  <h3>추진 로드맵</h3>
+
+  <h3>단지별 SPC 자산 회수 시뮬레이션</h3>
   <table>
-    <thead><tr><th style="width:8%">단계</th><th style="width:18%">기간</th><th style="width:30%">목표</th><th>주요 내용</th></tr></thead>
+    <thead>
+      <tr>
+        <th>단지 규모</th>
+        <th>머신 대수 (SPC 투자)</th>
+        <th>SPC 월 수수료 수입</th>
+        <th>SPC 월 감가상각</th>
+        <th>SPC 단지별 실질 월 수익</th>
+        <th>머신 투자 회수 기간</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td><strong>1</strong></td><td>2026 Q2</td><td>SPC 설립 + 파일럿 3개 단지</td><td>SPC 법인 설립(자본금 1억). 오진양행 파트너십 협상. 황해 네트워크에서 파일럿 3개 단지 선정. Option B+D 적용.</td></tr>
-      <tr><td><strong>2</strong></td><td>2026 Q3-Q4</td><td>앱 연동 + 10개 단지</td><td>파일럿 실운영 데이터 수집. 아파트너 앱 주문·관리비 정산 MVP 출시. 앱 수수료 실증.</td></tr>
-      <tr><td><strong>3</strong></td><td>2027 Q1-Q2</td><td>20개 단지·레퍼런스 확보</td><td>1년차 목표 달성. 단지 흑자 사례 공개로 신규 영업 가속화. 네슬레 코리아 직접 계약 협상.</td></tr>
-      <tr><td><strong>4</strong></td><td>2027 Q3~</td><td>30~50개 단지·플랫폼화</td><td>로봇 바리스타 파일럿. 50개 단지 달성 시 국내 아파트 F&B 독점 플랫폼 지위 확보.</td></tr>
+      <tr><td>1,700세대</td><td>1대 (3,000만원)</td><td>334만원</td><td>−40만원</td><td><strong>+294만원</strong></td><td>약 10.2개월</td></tr>
+      <tr><td>2,000세대</td><td>2대 (6,000만원)</td><td>393만원</td><td>−80만원</td><td><strong>+313만원</strong></td><td>약 19.2개월</td></tr>
+      <tr><td>3,000세대</td><td>2대 (6,000만원)</td><td>717만원</td><td>−80만원</td><td><strong>+637만원</strong></td><td>약 9.4개월</td></tr>
     </tbody>
   </table>
+
+  <h3>파일럿 3개 단지 SPC 종합 자금 흐름</h3>
+  <table>
+    <thead><tr><th>항목</th><th>1호 단지<br>(1,700세대)</th><th>2호 단지<br>(2,000세대)</th><th>3호 단지<br>(3,000세대)</th><th>합계</th></tr></thead>
+    <tbody>
+      <tr><td>머신 구매비 (SPC)</td><td>3,000만원</td><td>6,000만원</td><td>6,000만원</td><td><strong>1억 5,000만원</strong></td></tr>
+      <tr><td>인테리어 지원 (Option D)</td><td>1,000만원</td><td>1,000만원</td><td>1,000만원</td><td>3,000만원</td></tr>
+      <tr style="background:#f8f9fa"><td><strong>SPC 총 초기 투자</strong></td><td><strong>4,000만원</strong></td><td><strong>7,000만원</strong></td><td><strong>7,000만원</strong></td><td><strong>1억 8,000만원</strong></td></tr>
+      <tr><td>월 수수료 수입</td><td>334만원</td><td>393만원</td><td>717만원</td><td>1,444만원/월</td></tr>
+      <tr><td>월 감가상각 비용</td><td>−40만원</td><td>−80만원</td><td>−80만원</td><td>−200만원/월</td></tr>
+      <tr style="background:#f0fff4"><td><strong>SPC 월 실질 수익 (고정비 전)</strong></td><td><strong>+294만원</strong></td><td><strong>+313만원</strong></td><td><strong>+637만원</strong></td><td><strong>+1,244만원/월</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>SPC 월별 자금 흐름 요약 (파일럿 3개 단지 기준)</h3>
+  <table>
+    <thead><tr><th>항목</th><th>금액</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>3개 단지 수수료 수입 합계</td><td>+1,444만원</td><td>단지별 수수료 합산</td></tr>
+      <tr><td>머신 감가상각 (3개 단지)</td><td>−200만원</td><td>5대 × 40만원</td></tr>
+      <tr><td>SPC 본사 고정비</td><td>−400만원</td><td>영업경비+사무실+외주</td></tr>
+      <tr style="background:#f0fff4"><td><strong>SPC 월 순수익 (세전)</strong></td><td><strong>+844만원</strong></td><td></td></tr>
+      <tr style="background:#1a2a3a; color:#fff"><td><strong>SPC 연간 순수익 (세전)</strong></td><td><strong>1억 126만원</strong></td><td>초기 1년차 기준</td></tr>
+      <tr><td>총 투자 회수 기간</td><td colspan="2">총 투자 1억 8,000만원 ÷ 월 수익 844만원 = 약 21.3개월</td></tr>
+    </tbody>
+  </table>
+
+  <h3>20개 단지 달성 시 SPC 연간 손익</h3>
+  <table>
+    <thead><tr><th>누적 단지</th><th>월 수수료 합계</th><th>감가상각</th><th>고정비</th><th>월 순수익</th><th>연간 순수익</th></tr></thead>
+    <tbody>
+      <tr><td>3개 (파일럿)</td><td>1,444만원</td><td>−200만원</td><td>−400만원</td><td>844만원</td><td>1억 126만원</td></tr>
+      <tr><td>10개</td><td>5,200만원</td><td>−600만원</td><td>−400만원</td><td>4,200만원</td><td>5억 400만원</td></tr>
+      <tr><td>20개</td><td>10,400만원</td><td>−1,200만원</td><td>−400만원</td><td>8,800만원</td><td>10억 5,600만원</td></tr>
+      <tr style="background:#1a2a3a; color:#fff"><td>30개</td><td>15,600만원</td><td>−1,800만원</td><td>−400만원</td><td>13,400만원</td><td>16억 800만원</td></tr>
+    </tbody>
+  </table>
+
+  <h3>단지 인테리어 투자 회수 분석 (3,000세대, 파트타임2명)</h3>
+  <table>
+    <thead><tr><th>항목</th><th>금액</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>인테리어 초기 투자 (단지 부담)</td><td>6,000만원</td><td>머신비용 SPC 전액 부담</td></tr>
+      <tr><td>단지 월 순수익 (파트타임2명, 기본안)</td><td>+206만원</td><td>감가상각 전</td></tr>
+      <tr><td>인테리어 월 감가상각</td><td>−100만원</td><td>6,000만원 ÷ 60개월</td></tr>
+      <tr style="background:#f0fff4"><td><strong>실질 월 순수익 (감가상각 후)</strong></td><td><strong>+106만원</strong></td><td></td></tr>
+      <tr style="background:#1a2a3a; color:#fff"><td><strong>인테리어 투자 회수 기간</strong></td><td><strong>약 56.6개월 (4.7년)</strong></td><td>파트타임2명 기준</td></tr>
+    </tbody>
+  </table>
+  <div class="note caution"><div class="note-label">자금 조달 검토 필요</div>파일럿 3개 단지 SPC 초기 투자(1억 8,000만원)가 자본금 1억원 초과. 방안: ①순차 진입 (1호부터 수익으로 2호 재원 조달) ②증자(1억→2억) ③오진양행 분할납부 협상.</div>
 </section>
 
 <!-- 9 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">09</div><h2>SPC 고정비 구조 — 인건비 0원, 월 400만원 유지</h2></div>
+  <div class="sec-head"><div class="sec-num-block">09</div><h2>SPC 고정비 구조 — 인건비 0원, 월 400만원</h2></div>
   <table>
     <thead><tr><th>항목</th><th>월 비용</th><th>설명</th></tr></thead>
     <tbody>
@@ -769,7 +786,7 @@
       <tr><td>운영 인건비</td><td><strong>0원</strong></td><td>단지가 운영 인력 직접 고용</td></tr>
       <tr><td>영업 경비</td><td>150만원</td><td>단지 방문, 입대의 공청회, 계약 협의</td></tr>
       <tr><td>사무실 임차</td><td>100만원</td><td>공유오피스</td></tr>
-      <tr><td>회계·세무·외주</td><td>150만원</td><td>월 기장, 정산 보고서 발행, 계약서 검토</td></tr>
+      <tr><td>회계·세무·외주</td><td>150만원</td><td>월 기장, 정산 보고서, 계약서 검토</td></tr>
       <tr style="background:#1a2a3a; color:#fff"><td><strong>합계</strong></td><td><strong>400만원/월</strong></td><td>50개 단지가 되어도 동일 유지</td></tr>
     </tbody>
   </table>
@@ -777,15 +794,15 @@
 
 <!-- 10 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">10</div><h2>연간 SPC 기여 현황 — 누적 성장 전망</h2></div>
+  <div class="sec-head"><div class="sec-num-block">10</div><h2>누적 단지 성장 전망</h2></div>
   <table>
-    <thead><tr><th>누적 단지 수</th><th>월 수수료 합계</th><th>월 고정비</th><th>SPC 월 순수익</th><th>SPC 연간 순수익</th><th>주요 이정표</th></tr></thead>
+    <thead><tr><th>누적 단지</th><th>월 수수료</th><th>감가상각</th><th>고정비</th><th>SPC 월 순수익</th><th>SPC 연간 순수익</th><th>이정표</th></tr></thead>
     <tbody>
-      <tr><td><strong>3개 (파일럿)</strong></td><td>1,794만원</td><td>−400만원</td><td><strong>1,394만원</strong></td><td><strong>1억 6,728만원</strong></td><td>초기 자본금 회수 시작</td></tr>
-      <tr><td><strong>10개</strong></td><td>5,980만원</td><td>−400만원</td><td><strong>5,580만원</strong></td><td><strong>6억 6,960만원</strong></td><td>흑자 안정화</td></tr>
-      <tr><td><strong>20개 (1년차 목표)</strong></td><td>11,960만원</td><td>−400만원</td><td><strong>11,560만원</strong></td><td><strong>13억 8,720만원</strong></td><td>투자 완전 회수</td></tr>
-      <tr><td><strong>30개</strong></td><td>17,940만원</td><td>−400만원</td><td><strong>17,540만원</strong></td><td><strong>21억 480만원</strong></td><td>네슬레 직접 계약 협상</td></tr>
-      <tr><td><strong>50개</strong></td><td>29,900만원</td><td>−400만원</td><td><strong>29,500만원</strong></td><td><strong>35억 4,000만원</strong></td><td>아파트 F&B 플랫폼화</td></tr>
+      <tr><td>3개 (파일럿)</td><td>1,444만원</td><td>−200만원</td><td>−400만원</td><td>844만원</td><td>1억 126만원</td><td>투자 회수 시작</td></tr>
+      <tr><td>10개</td><td>5,200만원</td><td>−600만원</td><td>−400만원</td><td>4,200만원</td><td>5억 400만원</td><td>흑자 안정화</td></tr>
+      <tr><td>20개</td><td>10,400만원</td><td>−1,200만원</td><td>−400만원</td><td>8,800만원</td><td>10억 5,600만원</td><td>1년차 목표</td></tr>
+      <tr><td>30개</td><td>15,600만원</td><td>−1,800만원</td><td>−400만원</td><td>13,400만원</td><td>16억 800만원</td><td>네슬레 직접계약</td></tr>
+      <tr><td>50개</td><td>26,000만원</td><td>−3,000만원</td><td>−400만원</td><td>22,600만원</td><td>27억 1,200만원</td><td>플랫폼화</td></tr>
     </tbody>
   </table>
 </section>
@@ -796,137 +813,61 @@
   <table>
     <thead><tr><th>쟁점</th><th>법적 근거</th><th>SPC 대응</th></tr></thead>
     <tbody>
-      <tr><td><strong>카페 수익 귀속</strong></td><td>공동주택관리법 제23조</td><td>카페 매출 → 단지 잡수입 계정. 월별 손익계산서 자동 제공.</td></tr>
-      <tr><td><strong>위탁 사업자 선정</strong></td><td>국토부 고시 — 500만원 이상 경쟁 입찰 의무</td><td>황해가 입찰 제안서 작성·법률 지원</td></tr>
-      <tr><td><strong>수수료 합법성</strong></td><td>별도 법정 상한선 없음. 계약 자유 원칙.</td><td>입찰 과정에서 수수료율 명시, 입대의 의결로 확정</td></tr>
-      <tr><td><strong>세금 처리</strong></td><td>부가가치세법</td><td>SPC가 단지에 월 세금계산서 발행</td></tr>
+      <tr><td>카페 수익 귀속</td><td>공동주택관리법 제23조</td><td>카페 매출 → 단지 잡수입 계정. 월별 손익계산서 자동 제공.</td></tr>
+      <tr><td>위탁 사업자 선정</td><td>국토부 고시 — 500만원 이상 경쟁 입찰</td><td>황해가 입찰 제안서 작성·법률 지원</td></tr>
+      <tr><td>수수료 합법성</td><td>별도 법정 상한선 없음</td><td>입찰 과정에서 수수료율 명시, 입대의 의결로 확정</td></tr>
+      <tr><td>세금 처리</td><td>부가가치세법</td><td>SPC가 단지에 월 세금계산서 발행</td></tr>
     </tbody>
   </table>
-  <div class="note">종합 결론: 핵심은 <strong>① 경쟁 입찰로 SPC 선정, ② 수익을 잡수입으로 투명하게 회계 처리, ③ 사용처를 입대의 의결로 결정</strong>하는 3가지 절차를 지키는 것입니다.</div>
 </section>
 
 <!-- 12 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">12</div><h2>지분 구조 및 주주간계약 (SHA) 핵심 조항</h2></div>
+  <div class="sec-head"><div class="sec-num-block">12</div><h2>지분 구조 및 주주간계약 (SHA)</h2></div>
+  <p>SHA 전문은 별도 문서(Doc. 2)를 참조합니다. 핵심 조항 요약은 아래와 같습니다.</p>
   <h3>의결권 구조</h3>
   <table>
     <thead><tr><th>안건 유형</th><th>의결 기준</th><th>비고</th></tr></thead>
     <tbody>
       <tr><td>일반 경영 사항</td><td>이사회 과반수 의결</td><td>대표이사(성현우)가 일상 업무 집행</td></tr>
-      <tr><td>신규 단지 계약 (5개 초과 시)</td><td>주주총회 과반수 의결</td><td>아파트너·황해 각 1표 원칙으로 협의</td></tr>
-      <tr><td>추가 출자 / 증자</td><td>주주 100% 동의</td><td>일방적 증자를 통한 지분 희석 방지</td></tr>
-      <tr><td>대표이사 교체</td><td>주주총회 과반수 의결</td><td>성과 부진 또는 이해충돌 시 교체 가능</td></tr>
-      <tr><td>SPC 청산·합병</td><td>주주 100% 동의</td><td>일방의 강제 청산 불가</td></tr>
+      <tr><td>신규 단지 계약 (5개 초과 시)</td><td>주주총회 과반수 의결</td><td>아파트너·황해 각 1표 원칙</td></tr>
+      <tr><td>추가 출자 / 증자</td><td>주주 100% 동의</td><td>일방적 지분 희석 방지</td></tr>
+      <tr><td>대표이사 교체</td><td>주주총회 과반수 의결</td><td>성과 부진 또는 이해충돌 시</td></tr>
+      <tr><td>SPC 청산·합병</td><td>주주 100% 동의</td><td>일방적 청산 불가</td></tr>
     </tbody>
   </table>
   <h3>투자 회수 및 배당 정책</h3>
   <table>
     <thead><tr><th>항목</th><th>내용</th></tr></thead>
     <tbody>
-      <tr><td><strong>초기 배당 유보</strong></td><td>설립 후 1년차(20개 단지 달성까지): 순수익 전액 재투자.</td></tr>
-      <tr><td><strong>배당 개시 기준</strong></td><td>20개 단지 달성 + 월 순수익 1억원 이상 유지 시, 순수익의 50% 배당 검토.</td></tr>
-      <tr><td><strong>자본금 회수</strong></td><td>파일럿 3개 단지 기준 월 순수익 1,394만원 → 약 7.2개월 내 초기 자본금 1억원 회수 가능.</td></tr>
+      <tr><td>초기 배당 유보</td><td>설립 후 20개 단지 달성까지 순수익 전액 재투자.</td></tr>
+      <tr><td>배당 개시 기준</td><td>20개 단지 + 월 순수익 1억원 이상 유지 시 순수익 50% 배당. 지분 비율대로 지급.</td></tr>
+      <tr><td>자본금 회수</td><td>파일럿 3개 단지 월 순수익 844만원 → 약 11.8개월 내 초기 자본금 1억원 회수.</td></tr>
     </tbody>
   </table>
 </section>
 
 <!-- 13 -->
 <section>
-  <div class="sec-head"><div class="sec-num-block">13</div><h2>초기 투자 구조 — 에스프레소 머신 및 인테리어</h2></div>
-
-  <div class="note caution">
-    <div class="note-label">머신 대수 기준 (신규)</div>
-    에스프레소 머신(서모플랜 Standard) 1대당 구매가 + 설치비 = <strong>3,000만원</strong>. 1대의 적정 일 추출 상한선은 200잔입니다. 세대수 × 3.5잔/월 ÷ 30일 기준, 2,000세대(233잔/일), 3,000세대(350잔/일) 모두 200잔 초과 → <strong>2대 필수</strong>입니다.
-  </div>
-
-  <h3>부담 주체별 투자 구조</h3>
+  <div class="sec-head"><div class="sec-num-block">13</div><h2>초기 투자 구조 — 머신(SPC 자산) 및 인테리어</h2></div>
   <table>
-    <thead><tr><th style="width:20%">항목</th><th style="width:18%">부담 주체</th><th>내용</th><th style="width:20%">비고</th></tr></thead>
+    <thead><tr><th style="width:18%">항목</th><th style="width:18%">부담 주체</th><th>내용</th><th style="width:20%">비고</th></tr></thead>
     <tbody>
-      <tr>
-        <td><strong>에스프레소 머신</strong></td>
-        <td><strong>SPC 전액 부담</strong></td>
-        <td>오진양행에서 직접 구매. SPC 유형자산으로 계상. 감가상각 5년(연 20%).</td>
-        <td>계약 해지 시 머신 회수 후 다른 단지 재배치 또는 중고 매각 가능</td>
-      </tr>
-      <tr>
-        <td><strong>인테리어 공사비</strong></td>
-        <td><strong>기본: 단지 부담</strong></td>
-        <td>입대의가 발주. 장기수선충당금 또는 잡수입에서 집행 가능. 단지 자산으로 등재(감가상각 5년).</td>
-        <td>법적으로 입대의 소유 시설에 단지 자금 투입이 가장 깔끔한 구조</td>
-      </tr>
-      <tr>
-        <td><strong>인테리어 일부 지원</strong></td>
-        <td><strong>선택: SPC 서비스</strong></td>
-        <td>파일럿 단지 한정, SPC가 500~1,000만원 지원. 계약 기간(2년) 내 수수료로 분할 환수.</td>
-        <td>Option D 적용 시</td>
-      </tr>
+      <tr><td><strong>에스프레소 머신</strong></td><td><strong>SPC 전액 부담</strong></td><td>오진양행 직접 구매. SPC 유형자산 계상. 감가상각 5년. 잔존가치 20%(1대 600만원).</td><td>계약 해지 시 머신 회수·재배치 또는 중고 매각 가능</td></tr>
+      <tr><td><strong>인테리어 공사비</strong></td><td><strong>기본: 단지 부담</strong></td><td>입대의가 발주. 장기수선충당금·잡수입 집행 가능. 단지 자산 등재(감가상각 5년).</td><td>법적으로 가장 깔끔한 구조</td></tr>
+      <tr><td><strong>인테리어 일부 지원</strong></td><td><strong>선택: SPC 서비스</strong></td><td>파일럿 단지 한정 500~1,000만원 지원. 계약기간(2년) 수수료 분할 환수.</td><td>Option D 적용 시</td></tr>
     </tbody>
   </table>
-
-  <h3>단지 규모별 초기 투자 비용 구조</h3>
+  <h3>단지 규모별 초기 투자 비용</h3>
   <table>
-    <thead>
-      <tr>
-        <th>단지 규모</th>
-        <th>일 판매량</th>
-        <th>머신 대수</th>
-        <th>머신 구매비<br>(SPC 부담)</th>
-        <th>인테리어<br>(단지 부담)</th>
-        <th>단지 실부담</th>
-      </tr>
-    </thead>
+    <thead><tr><th>단지 규모</th><th>일 판매량</th><th>머신 대수</th><th>머신 구매비 (SPC)</th><th>인테리어 (단지)</th><th>단지 실부담</th></tr></thead>
     <tbody>
-      <tr><td><strong>1,000세대</strong></td><td>117잔</td><td>1대</td><td>3,000만원</td><td>3,000만원</td><td><strong>3,000만원</strong></td></tr>
-      <tr><td><strong>1,700세대 (기준선)</strong></td><td>198잔</td><td>1대 (한계)</td><td>3,000만원</td><td>4,000만원</td><td><strong>4,000만원</strong></td></tr>
-      <tr><td><strong>2,000세대</strong></td><td>233잔</td><td><strong>2대 필수</strong></td><td>6,000만원</td><td>4,500만원</td><td><strong>4,500만원</strong></td></tr>
-      <tr><td><strong>3,000세대</strong></td><td>350잔</td><td><strong>2대 필수</strong></td><td>6,000만원</td><td>6,000만원</td><td><strong>6,000만원</strong></td></tr>
-      <tr><td><strong>5,000세대+</strong></td><td>583잔</td><td>2대+</td><td>6,000만원+</td><td>9,000만원</td><td><strong>9,000만원</strong></td></tr>
+      <tr><td>1,000세대</td><td>117잔</td><td>1대</td><td>3,000만원</td><td>3,000만원</td><td><strong>3,000만원</strong></td></tr>
+      <tr><td>1,700세대 (기준선)</td><td>198잔</td><td>1대 (한계)</td><td>3,000만원</td><td>4,000만원</td><td><strong>4,000만원</strong></td></tr>
+      <tr><td>2,000세대</td><td>233잔</td><td><strong>2대 필수</strong></td><td>6,000만원</td><td>4,500만원</td><td><strong>4,500만원</strong></td></tr>
+      <tr><td>3,000세대</td><td>350잔</td><td><strong>2대 필수</strong></td><td>6,000만원</td><td>6,000만원</td><td><strong>6,000만원</strong></td></tr>
     </tbody>
   </table>
-
-  <h3>파일럿 3개 단지 SPC 초기 투자 시뮬레이션</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>항목</th>
-        <th>1호 단지<br>(1,700세대)</th>
-        <th>2호 단지<br>(2,000세대)</th>
-        <th>3호 단지<br>(3,000세대)</th>
-        <th>합계</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>머신 구매비 (SPC)</td><td>3,000만원</td><td>6,000만원</td><td>6,000만원</td><td><strong>1억 5,000만원</strong></td></tr>
-      <tr><td>인테리어 지원 (Option D)</td><td>1,000만원</td><td>1,000만원</td><td>1,000만원</td><td>3,000만원</td></tr>
-      <tr style="background:#f8f9fa"><td><strong>SPC 총 초기 투자</strong></td><td><strong>4,000만원</strong></td><td><strong>7,000만원</strong></td><td><strong>7,000만원</strong></td><td><strong>1억 8,000만원</strong></td></tr>
-    </tbody>
-  </table>
-
-  <div class="note caution">
-    <div class="note-label">자금 조달 방안 검토 필요</div>
-    파일럿 3개 단지 SPC 초기 투자(1억 8,000만원)는 자본금 1억원을 초과합니다. 실행 가능한 방안:<br>
-    <strong>① 순차 진입</strong> — 1호 단지(소규모, 머신 1대)부터 시작 → 수수료 수익으로 2·3호 재원 조달<br>
-    <strong>② 증자</strong> — 자본금 1억 → 2억으로 증자 (아파트너 1.4억, 황해 0.6억)<br>
-    <strong>③ 오진양행 분할납부 협상</strong> — 머신 구매 시 6~12개월 분할납부 조건 협의
-  </div>
-
-  <h3>3,000세대 단지 인테리어 투자 회수 분석</h3>
-  <table>
-    <thead><tr><th>항목</th><th>정규직 4명</th><th>파트타임 2명</th><th>비고</th></tr></thead>
-    <tbody>
-      <tr><td>인테리어 초기 투자 (단지 부담)</td><td colspan="2">6,000만원</td><td>머신 비용은 SPC 전액 부담</td></tr>
-      <tr><td>단지 월 순수익 (Normal 기준)</td><td>−478만원</td><td><strong>+122만원</strong></td><td>인건비 구조에 따라 달라짐</td></tr>
-      <tr><td>월 감가상각 비용</td><td colspan="2">−100만원</td><td>6,000만원 ÷ 60개월</td></tr>
-      <tr style="background:#f8f9fa"><td><strong>실질 월 손익 (감가상각 반영)</strong></td><td><strong style="color:#9b2335">−578만원</strong></td><td><strong style="color:#276749">+22만원</strong></td><td></td></tr>
-      <tr style="background:#1a2a3a; color:#fff"><td><strong>투자 회수 기간</strong></td><td>회수 불가<br>(손익 개선 필요)</td><td><strong>약 22.7개월</strong></td><td>22만원/월 기준</td></tr>
-    </tbody>
-  </table>
-
-  <div class="note update">
-    <div class="note-label">핵심 결론</div>
-    단지 흑자 달성의 핵심은 <strong>인건비 구조 최적화</strong>입니다. WPS 머신은 바리스타 자격이 불필요하므로 기존 관리 인력 활용 또는 파트타임 최소 고용으로 인건비를 400만원 수준으로 낮추면, 3,000세대 기준 Normal 시나리오에서 단지 흑자 달성이 가능합니다.
-  </div>
 </section>
 
 </div>
